@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <link rel="stylesheet" href="assets/css/reset.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   <body>
     <!-- Header with logo -->
     <header id="header">
       <div id="logo">
         <img
-          src="https://static.thenounproject.com/png/487562-200.png"
-          alt="French Bulldog"
-          id="header-img"
+        src="https://static.thenounproject.com/png/487562-200.png"
+        alt="French Bulldog"
+        id="header-img"
         />
       </div>
       <!-- Navigation bar -->
@@ -24,12 +24,26 @@
         <ul>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#video-section" class="nav-link">Video</a></li>
-          <li><a href="#where-To-Find" class="nav-link">Buy</a></li>
+          <li><a href="#where-to-find" class="nav-link">Buy</a></li>
         </ul>
       </nav>
     </header>
-    <div class="about">
-      <h4>Most popular colors of French Bulldogs</h4>
+    
+    <div class="container">
+
+      <!-- Form that contains email enter  -->
+      <div class="form-div">
+        <h1> The French Bulldog</h1>
+        <h4> Enter information to receive updates</h4>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <!-- <label for="email">Email:</label> -->
+          <input type="email" id="email" required placeholder="Enter Email here" />
+          <input id="submit" type="submit" class="btn"></input></form>
+        </div>
+
+<!-- This contains more information -->
+<div id="about">
+    <h4>Most popular colors of French Bulldogs</h4>
       <div class="image"><img src="assets/images/blue.jpeg" alt="French Bulldog" id="header-image" /></div>
       <div class="info"><h4> Blue</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam autem voluptas libero harum vitae
         impedit voluptatem perspiciatis officia, blanditiis minima itaque, aspernatur doloribus </p></div>
@@ -40,39 +54,35 @@
       <div class="info"><h4>Brindle</h4> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam autem voluptas libero harum vitae impedit voluptatem perspiciatis officia, blanditiis minima itaque, aspernatur doloribus </p></div>
     </div>
 
+    <!-- Holds video -->
     <section id="video-section">
+      <h4> Compilation Video</h4>
       <iframe
         id="video"
-        width="640"
-        height="360"
+        width="650"
+        height="400"
         src="https://www.youtube.com/embed/gVmOeTWEf_4"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
     </section>
-    <div class="form-div">
-      <h4> Enter information to receive updates</h4>
-      <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          required
-          placeholder="Enter Email here"
-        />
-        <input id="submit" type=
-        "submit" class ="btn"></input>
+    
 
-        <div class="where-to-find">
+        <div id="where-to-find">
           <h4> Links to find a French Bulldog</h4>
-          <ul>
+          <ul class ="info">
             <li> Google</li>
             <li> Google</li>
             <li> Google</li>
           </ul>
         </div>
-      </form>
+        <footer>
+          Footer
+        </footer>
     </div>
+
+  
+    
   </body>
 </html>
