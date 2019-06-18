@@ -1,89 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <link rel="stylesheet" href="assets/css/reset.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-  <body>
-    <!-- Header with logo -->
-    <header id="header">
-      <div id="logo">
-        <img
-        src="https://static.thenounproject.com/png/487562-200.png"
-        alt="French Bulldog"
-        id="header-img"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="assets/css/reset.css" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>
+  <!-- Header with logo -->
+  <header id="header">
+    <div id="logo">
+      <img src="https://static.thenounproject.com/png/487562-200.png" alt="French Bulldog" id="header-img" />
+    </div>
+    <!-- Navigation bar -->
+    <nav id="nav-bar">
+      <ul id=nav>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li id=nav><a href="#video-section" class="nav-link">Video</a></li>
+        <li><a href="#where-to-find" class="nav-link">Buy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Form that contains email enter  -->
+    <div class="form-div">
+      <h1> The French Bulldog</h1>
+      <h4> Enter information to receive updates</h4>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <!-- <label for="email">Email:</label> -->
+        <input type="email" id="email" required placeholder="Enter Email here" />
+        <input id="submit" type="submit" class="btn"></input></form>
+    </div>
+
+    <!-- This contains more information -->
+    <div id="about">
+
+      <div class="grid">
+        <div class="image"><img src="assets/images/blue.jpeg" alt="French Bulldog" id="header-image" /></div>
+        <div class="info">
+          <h4> Blue</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam autem voluptas
+            vitae
+          </p>
+        </div>
       </div>
-      <!-- Navigation bar -->
-      <nav id="nav-bar">
-        <ul id = nav>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li id = nav><a href="#video-section" class="nav-link">Video</a></li>
-          <li><a href="#where-to-find" class="nav-link">Buy</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <div class="container">
-
-      <!-- Form that contains email enter  -->
-      <div class="form-div">
-        <h1> The French Bulldog</h1>
-        <h4> Enter information to receive updates</h4>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <!-- <label for="email">Email:</label> -->
-          <input type="email" id="email" required placeholder="Enter Email here" />
-          <input id="submit" type="submit" class="btn"></input></form>
+      <div class="grid">
+        <div class="image"><img src="assets/images/tan.jpeg" alt="French Bulldog" id="header-image" /></div>
+        <div class="info">
+          <h4>Tan</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam autem
+            voluptas
+          </p>
         </div>
-
-<!-- This contains more information -->
-<div id="about">
-   
-    <div class="grid">
-      <div class="image"><img src="assets/images/blue.jpeg" alt="French Bulldog" id="header-image" /></div>
-      <div class="info"><h4> Blue</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam autem voluptas libero harum vitae
-        impedit voluptatem perspiciatis officia, blanditiis minima itaque, aspernatur doloribus </p></div>
+      </div>
+      <div class="grid">
+        <div class="image"><img src="assets/images/brindle.jpeg" alt="French Bulldog" id="header-image" /></div>
+        <div class="info">
+          <h4>Brindle</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam autem voluptas
+          </p>
         </div>
-        <div class="grid">
-      <div class="image"><img src="assets/images/tan.jpeg" alt="French Bulldog" id="header-image" /></div>
-      <div class="info"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam autem voluptas libero harum vitae
-        impedit voluptatem perspiciatis officia, blanditiis minima itaque, aspernatur doloribus </p></div>
-        </div>
-        <div class="grid">
-      <div class="image"><img src="assets/images/brindle.jpeg" alt="French Bulldog" id="header-image" /></div>
-      <div class="info"><h4>Brindle</h4> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem magnam autem voluptas libero harum vitae impedit voluptatem perspiciatis officia, blanditiis minima itaque, aspernatur doloribus </p></div>
       </div>
     </div>
 
     <!-- Holds video -->
     <section id="video-section">
-      <iframe
-        id="video"
-        width="650"
-        height="400"
-        src="https://www.youtube.com/embed/gVmOeTWEf_4"
-        frameborder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <iframe id="video" width="650" height="400" src="https://www.youtube.com/embed/gVmOeTWEf_4" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
-    
 
-        <div id="where-to-find">
-          <h4> Before owning a bulldog</h4>
-         
-        </div>
-        <footer>
-          Footer
-        </footer>
-    </div>
 
-  
-    
-  </body>
+    <!-- <div id="where-to-find">
+      <h4> Before owning a bulldog</h4>
+
+    </div> -->
+    <footer>
+
+    </footer>
+  </div>
+
+
+
+</body>
+
 </html>
